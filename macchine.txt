@@ -1,0 +1,19 @@
+Struttura per database di macchine
+
+database = concessionaria
+tabella = macchine
+
+id_macchina         PK          BIGINT          NOTNULL         AUTO_INCREMENT
+casa_produttrice                VARCHAR         NOTNULL
+nome                            VARCHAR         NOTNULL
+potenza(Kw)                     TINYINT         NOTNULL
+carburante                      VARCHAR(7)      NOTNULL
+capacità_serbatoio              TINYINT         NOTNULL
+trazione                        VARCHAR(10)     NOTNULL
+velocità_max(Km/h)              TINYINT         NOTNULL
+accelerazione(s)                TINYINT         NOTNULL
+cilindrata(cm^3)                TINYINT         NOTNULL
+targa                           VARCHAR(7)      NOTNULL         UNIQUE
+prezzo                          FLOAT(8,2)      NOTNULL
+
+
